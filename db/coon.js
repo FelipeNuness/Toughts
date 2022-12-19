@@ -1,10 +1,15 @@
 const { Sequelize } = require('sequelize');
 
-const sequelize = new Sequelize('toughts', 'root', 'ZjLeMo8b7G9HKltd6yoI', {
-	host: 'containers-us-west-166.railway.app',
-	dialect: 'mysql',
-	port: '6732',
-});
+const sequelize = new Sequelize(
+	'toughts',
+	process.env.USER,
+	process.env.PASSWORD,
+	{
+		host: process.env.HOST,
+		dialect: 'mysql',
+		port: process.env.PORT,
+	},
+);
 try {
 	sequelize.authenticate();
 	console.log('conectado');
