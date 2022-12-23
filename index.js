@@ -59,7 +59,7 @@ app.use('/', authRoutes);
 app.get('/', ToughtController.showToughts);
 
 conn
-	.sync({ force: true })
+	.sync()
 	.then(() => {
 		app.listen(process.env.PORT, () => {
 			console.log(`Server Listen to ${process.env.PORT}`);
