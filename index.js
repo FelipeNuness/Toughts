@@ -4,6 +4,7 @@ const exphbs = require('express-handlebars');
 const session = require('express-session');
 const FileStore = require('session-file-store')(session);
 const flash = require('express-flash');
+const dotenv = require('dotenv').config();
 // modulos internos
 
 const conn = require('./db/coon');
@@ -61,7 +62,7 @@ conn
 	.sync({ force: true })
 	.then(() => {
 		app.listen(process.env.PORT, () => {
-			console.log(`Server Listen to${process.env.PORT}`);
+			console.log(`Server Listen to ${process.env.PORT}`);
 		});
 	})
 	.catch((err) => console.log(err));
