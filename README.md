@@ -36,7 +36,7 @@ $ cd Toughts
 $ npm i
 
 # Criar o arquivo .env
-colocando as configurações do seu banco de dados:
+colocar as configurações do seu banco de dados:
 - DB_HOST -> host
 - DB_USER -> usuario 
 - DB_PASSWORD -> senha 
