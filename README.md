@@ -36,11 +36,11 @@ $ cd Toughts
 $ npm i
 
 # Criar o arquivo .env
-colocar as configurações do seu banco de dados:
-- DB_HOST -> host
-- DB_USER -> usuario 
-- DB_PASSWORD -> senha 
-- DB_PORT -> porta do bando de dados
+  setar as variáveis de ambiente
+- DB_HOST -> host do banco de dados
+- DB_USER -> usuario do banco de dados
+- DB_PASSWORD -> senha do banco de dados
+- DB_PORT -> porta do banco de dados
 - PORT -> porta onde vai rodar o servidor
 
 # Rodar o Projeto
