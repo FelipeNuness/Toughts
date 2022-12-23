@@ -23,3 +23,27 @@ Tecnologias utilizadas:
 <td>Session</td>
 </tr>
 </table>
+
+### Para Rodar (local)
+```bash
+# Clonar o Projeto
+$ git clone https://github.com/FelipeNuness/Toughts
+
+# Acessar
+$ cd Toughts
+
+# Instalar as dependências
+$ npm i
+
+# Criar o arquivo .env
+colocando as configurações do seu banco de dados:
+- DB_HOST -> host
+- DB_USER -> usuario 
+- DB_PASSWORD -> senha 
+- DB_PORT -> porta do bando de dados
+- PORT -> porta onde vai rodar o servidor
+
+# Rodar o Projeto
+$ npm start
+
+```
